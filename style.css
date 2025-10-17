@@ -183,7 +183,7 @@ button {
 
 @keyframes gerakAtasBawah{
   0%   { top: 0; }
-  50%  { top: -35px; } /* naik ke atas */
+  50%  { top: -40px; } /* naik ke atas */
   100% { top: 0; }
 }
 
