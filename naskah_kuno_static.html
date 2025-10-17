@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Naskah Kuno — Teka-teki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Quintessential&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage" role="main">
+    <section class="parchment" aria-live="polite">
+      <h1 class="title">Jejak yang Tak Pernah Hilang</h1>
+      <br>
+      <div class="text-area" id="textArea">
+        <div class="text-inner" id="textInner">
+          <div class="line" id="line"></div><span class="cursor" id="cursor"></span>
+        </div>
+      </div>
+      <div class="controls">
+        <div>
+          <button id="btnPause">Jeda</button>
+          <button id="btnRestart">Ulang</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" id="overlay">
+    <div class="passbox">
+      <p>Masukkan kata sandi untuk membuka naskah kuno.</p>
+      <input id="passwordInput" type="password" placeholder="kata sandi..."/>
+      <div class="actions">
+        <button id="btnSubmit">Buka</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="backsound" loop preload="auto" src="backsound.mp3"></audio>
+  <!-- <audio id="voiceover" preload="auto" src="voiceover.mp3"></audio> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
