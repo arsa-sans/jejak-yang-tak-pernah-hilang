@@ -1,29 +1,11 @@
-const PASSWORD = '2359';
-    const paragraphs = [
-      `Ada kalanya sesuatu yang paling berharga bukanlah apa yang terlihat,
-melainkan apa yang disembunyikan dengan penuh kehati-hatian.
-Kitab Mandala Prakasa - sebuah peninggalan agung yang menyimpan
-nilai-nilai luhur, telah lama disebut-sebut sebagai "hilang". Lokasinya menjadi
-teka-teki. Keberadaannya menjadi misteri. Namun apakah benar ia hilang?
-Ataukah ia hanya menunggu untuk ditemukan oleh mereka yang benar-benar layak?`,
-      `Kitab ini bukan sekadar naskah kuno. Ia adalah saksi bisu perjalanan para
-pemimpin terdahulu. Ia mencatat jejak kejujuran dalam kegelapan, keberanian
-dalam ketakutan, dan pengabdian dalam keheningan. Kitab ini adalah cermin.
-Bukan untuk melihat wajah, tetapi untuk melihat ke dalam jiwa.
-Dan sesungguhnya… kitab itu tidak pernah dicuri. Ia tidak pernah lenyap.`,
-      `Ia kami simpan dengan sengaja. Bukan untuk disembunyikan, tapi untuk
-dijaga dari tangan yang belum siap. Kami menyimpannya bukan karena takut
-kehilangannya, tapi karena kami ingin menghidupkannya kembali, bukan lewat
-mata, tapi lewat pengalaman, pemahaman, dan proses pembentukan diri.`,
-      `Tempat "hilangnya" kitab itu, kini bukan lagi ruang kosong. Ia adalah ruang
-ujian. Sebuah arena bagi para peserta PTA untuk mencari, bertanya, meragukan,
-dan akhirnya mengerti. Karena dalam proses pencarian itulah, terbentuk karakter.
-Dan dalam ketidakhadiran fisik itulah, justru nilai sejati kitab ini bisa hadir lebih
-utuh.
-Maka jangan cari Mandala Prakasa hanya dengan langkah kaki, tapi carilah
-ia dengan langkah hati. Karena sejatinya, kitab itu tidak berada di ujung pencarian,
-tapi ada di sepanjang perjalanan.`,
-    ];
+const paragraphs = [
+  `Ada kalanya sesuatu yang paling berharga bukanlah apa yang terlihat, melainkan apa yang disembunyikan dengan penuh kehati-hatian. Kitab Mandala Prakasa - sebuah peninggalan agung yang menyimpan nilai-nilai luhur, selama ini dipercaya sudah “hilang”. Lokasinya menjadi teka-teki. Keberadaannya menjadi misteri. Namun apakah benar ia hilang? Ataukah ia hanya menunggu untuk ditemukan oleh mereka yang benar-benar layak?`,
+  `Kitab ini bukan sekadar naskah kuno. Ia adalah saksi bisu perjalanan para pemimpin terdahulu. Ia mencatat jejak kejujuran dalam kegelapan, keberanian dalam ketakutan, dan pengabdian dalam keheningan. Kitab ini adalah cermin. Bukan untuk melihat wajah, tetapi untuk melihat ke dalam jiwa. Dan sesungguhnya… kitab itu tidak pernah dicuri. Ia tidak pernah lenyap.`,
+  `Ia kami simpan dengan sengaja. Bukan untuk disembunyikan, tapi untuk dijaga dari tangan yang belum siap. Kami menyimpannya bukan karena takut kehilangannya, tapi karena kami ingin menghidupkannya kembali, bukan lewat mata, tapi lewat pengalaman, pemahaman, dan proses pembentukan diri.`,
+  `Tempat “hilangnya” kitab itu, kini bukan lagi ruang kosong. Ia adalah ruang ujian. Sebuah arena bagi para peserta PTA untuk mencari, bertanya, meragukan, dan akhirnya mengerti. Karena dalam proses pencarian itulah, terbentuk karakter. Dan dalam ketidakhadiran fisik itulah, justru nilai sejati kitab ini bisa hadir lebih utuh. Maka jangan cari Mandala Prakasa hanya dengan langkah kaki, tapi carilah ia dengan langkah hati.`,
+  `Karena sejatinya, kitab itu tidak berada di ujung pencarian, tapi ada di sepanjang perjalanan. Dan tugas kalian kali ini adalah temukan kitab itu di tempat yang tersembunyi, bukan karena tersembunyi secara fisik, tetapi karena ia menanti untuk dikenali oleh hati yang terbuka dan pikiran yang siap menerima makna. Perjalanan kalian dimulai sekarang. Selamat mencari.`
+];
+    const ANGKA = '2359';
     const TYPE_SPEED = 50;
     const PAUSE_AFTER_PARAGRAPH = 2500;
     const LOOP = false;
@@ -56,7 +38,7 @@ tapi ada di sepanjang perjalanan.`,
     passInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') checkPassword(); });
 
     function checkPassword(){
-      if(passInput.value === PASSWORD){
+      if(passInput.value === ANGKA){
         startSequence();
       } else {
         passInput.value = '';
