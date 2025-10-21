@@ -14,7 +14,7 @@ body {
   font-family: "Quintessential", serif;
 }
 
-/* Hutan belantara seram */
+/* cover buku */
 body::before {
   content: '';
   position: fixed;
@@ -187,7 +187,6 @@ button {
 @media (max-width:480px) {
   .parchment {
     padding: 18px;
-    /* border-radius: 12px; */
     height: 75vh;
   }
 
