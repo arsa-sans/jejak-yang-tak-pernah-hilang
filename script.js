@@ -6,7 +6,7 @@ const paragraphs = [
   "Tugas kalian kali ini adalah temukan kitab itu di tempat yang tersembunyi, tempat yang hanya bisa ditemukan ketika kalian bisa memahami semua clue yang didapatkan. Perjalanan kalian belum selesai.\nSelamat mencari."
 ];
     const ANGKA = '2359';
-    const TYPE_SPEED = 10;
+    const TYPE_SPEED = 50;
     const PAUSE_AFTER_PARAGRAPH = 2500;
     const LOOP = false;
 
