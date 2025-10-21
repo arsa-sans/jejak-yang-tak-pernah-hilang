@@ -45,14 +45,11 @@ body::before {
   height: 80vh;
   min-height: 360px;
   border-radius: 18px;
-  /* box-shadow: 0 18px 60px rgba(0, 0, 0, 0.9); */
   background-image: url(assets/paper.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* border: 1px solid rgba(255, 255, 255, 0.05); */
   padding: 28px;
-  /* box-sizing: border-box; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -67,7 +64,6 @@ body::before {
   color: rgb(66, 27, 0);
   letter-spacing: 2px;
   margin: 0 0 8px 0;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
 }
 
 .text-area {
@@ -86,6 +82,7 @@ body::before {
 
 .line {
   font-size: 18px;
+  white-space: pre-wrap;
   text-align: center;
   line-height: 1.7;
   color: black;
